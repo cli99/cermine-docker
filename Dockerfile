@@ -17,4 +17,6 @@ WORKDIR ${HOME}/CERMINE/cermine-impl/target
 
 # Setup the entrypoint
 COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+
 ENTRYPOINT [ "/entrypoint.sh" ]
